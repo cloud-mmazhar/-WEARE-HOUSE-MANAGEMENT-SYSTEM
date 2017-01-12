@@ -1,0 +1,12 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/MainMasterPage.master" AutoEventWireup="true" CodeFile="frmAboutUs.aspx.cs" Inherits="frmAboutUs" Title="Untitled Page" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<b style="font-size: large; color: Black">About the Company</b>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="body"><tr><td valign="top" width="15"> </td><td valign="top"></font><br><font face="Verdana" size="2" color="#696969"><font class=smallbody>Founded in 2001, XXXXX has been focused on creating business applications utilizing the latest Microsoft technologies.  With a focus on mobile software applications, XXXXX has developed products ranging from Warehouse Management to Route Accounting to Custom Web Applications.  XXXXX takes pride in providing Microsoft Business Solutions Software at all stages from planning and solution discovery to implementation, customization, integration with existing systems, and customer support.<br>
+Our flagship product, WithoutWire Warehouse is a full featured Warehouse Management Solution designed to meet the requirements and budgets of the small and mid-sized business organizations.  Warehouse is designed to help business optimize their warehousing and manufacturing inventory operations.</font>&nbsp;<a target="_top" href=""></a>&nbsp;<font class=smallbody><UL><LI>2001 - XXXXX was founded, as a spin off of Inetium</LI><LI>2003 - XXXXX deployed first mobile business application</LI><LI>2004 - WithoutWire Warehouse version 1.0 released<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXX becomes Microsoft Gold Certified Development Partner</LI><LI>2005 - XXXXX becomes Microsoft Managed ISV</LI><LI>2006 - Route Accounting version 1.0 released</LI><LI>2007 - Warehouse passes Certified for Dynamics GP Product Testing</LI></UL><br>
+</font></font><br><font face="Arial" size="2" color="#696969"><font class=smallbody>By combining the best practices of the Internet revolution and applying the latest innovations in wireless technologies we are able to provide a new breed of applications that remove the need for technical skills to manage.  We deliver our solutions as licensed software, consulting services, and hosted subscription services.</font></font><br><font face="Arial" size="2" color="#000000"></td></tr></table>
+    
+</asp:Content>
+

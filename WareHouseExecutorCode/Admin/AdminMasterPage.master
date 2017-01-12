@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs"
+    Inherits="Admin_AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            font-family: Verdana;
+            font-weight: bold;
+            font-size: large;
+            color: #422421;
+        }
+        .Dynamicmenu
+        {
+         text-align:left;	
+        }
+    </style>
+</head>
+<body topmargin="0" leftmargin="0" rightmargin="0">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <table height="100%" width="100%">
+        <tr>
+            <td>
+                <table bordercolor="#dcdcdc" height="90%" cellspacing="0" cellpadding="0" width="780"
+                    align="center" border="0">
+                    <tbody>
+                        <tr>
+                            <td valign="top" width="100%" height="100%">
+                                <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top" align="left" colspan="3">
+                                                <img alt="" src="../ImgMain/withoutwirewarehouse2(1).jpg" border="0" valign="None"><br>
+                                            </td>
+                                        </tr>
+                                        <tr style="background-image: url(../ImgMain/middletops(1).jpg); background-repeat: no-repeat;
+                                            height: 32px;">
+                                            <td colspan="3">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td valign="top" width="30%">
+                                                            <span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Administration
+                                                            </span>
+                                                        </td>
+                                                        <td valign="top" width="40%">
+                                                            <span class="style2" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                Welcome To </span>
+                                                        </td>
+                                                        <td align="right" width="30%" >
+                                                            <asp:LinkButton ID="lnkSignOut" CausesValidation="false" runat="server" Font-Bold="True" PostBackUrl="~/Login.aspx"
+                                                                Font-Size="X-Small" ForeColor="#521810">SignOut</asp:LinkButton>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" colspan="3" >
+                                                <asp:Menu ID="AdminMenu" runat="server" Orientation="Horizontal" 
+                                                    Font-Names="Cambria" Font-Size="Medium" ForeColor="#FF6521" 
+                                                    Font-Bold="True" StaticEnableDefaultPopOutImage="False" 
+                                                    BackColor="#DEDFDE">
+                                                    
+                                                    <DynamicMenuStyle CssClass="Dynamicmenu" BackColor="#DEDFDE" />
+                                                    <DynamicMenuItemStyle CssClass="Dynamicmenu" BackColor="#DEDFDE" />
+                                                    
+                                                    <Items>
+                                                        <asp:MenuItem Text="||" Value="||"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Admin/Default.aspx">
+                                                        </asp:MenuItem>
+                                                        <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Employee" Value="Employee">
+                                                            <asp:MenuItem Text="Add Emp Profile" Value="New Item" 
+                                                                NavigateUrl="~/Admin/frmAddEmpProfile.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Add Dept Info" Value="Add Dept Info" 
+                                                                NavigateUrl="~/Admin/frmAddDept.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Edit Dept Info" Value="Edit Dept Info" 
+                                                                NavigateUrl="~/Admin/frmManageDept.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Add Desg Info" Value="Add Desg Info" 
+                                                                NavigateUrl="~/Admin/frmAddDesg.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Edit Desg Info" Value="Edit Desg Info" 
+                                                                NavigateUrl="~/Admin/frmManageDesg.aspx"></asp:MenuItem>
+                                                        </asp:MenuItem>
+                                                        <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Warehouse" Value="Warehouse">
+                                                            <asp:MenuItem Text="Add Warehouse Info" Value="New Item" 
+                                                                NavigateUrl="~/Admin/frmAddWarehouseMaster.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Edit Warehouse Info" Value="New Item" 
+                                                                NavigateUrl="~/Admin/frmModifyWarehouseMaster.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Add WH Storage Info" Value="New Item" 
+                                                                NavigateUrl="~/Admin/frmAddWarehouseStorageInstMaster.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="WH Company Brands" Value="WH Company Brands" 
+                                                                NavigateUrl="~/Admin/frmAddWarehouseCompanyBrandsMaster.aspx"></asp:MenuItem>
+                                                        </asp:MenuItem>
+                                                        <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Company " Value="Company ">
+                                                            <asp:MenuItem Text="Add Company Info" Value="Add Company Info" 
+                                                                NavigateUrl="~/Admin/frmAddCompanyMaster.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Edit Company Info" Value="Edit Company Info" 
+                                                                NavigateUrl="~/Admin/frmModifyCompanyDetails.aspx"></asp:MenuItem>
+                                                        </asp:MenuItem>
+                                                        <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Products &amp; Brands" Value="Products">
+                                                            <asp:MenuItem Text="Add Product Info" Value="New Item" 
+                                                                NavigateUrl="~/Admin/frmAddProductMaster.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Edit Product Info" Value="New Item" 
+                                                                NavigateUrl="~/Admin/frmModifyProductMaster.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Add Brand Info" Value="New Item" 
+                                                                NavigateUrl="~/Admin/frmAddCompanyBrandMaster.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Edit Brand Info" Value="Edit Company Info" 
+                                                                NavigateUrl="~/Admin/frmModifyCompanyBrandMaster.aspx"></asp:MenuItem>
+                                                        </asp:MenuItem>
+                                                        <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Packages &amp; Units" Value="Packages &amp; Units">
+                                                            <asp:MenuItem Text="Add Package Info" Value="Add Package Info" 
+                                                                NavigateUrl="~/Admin/frmAddPackageTypeMaster.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Edit Package Info" Value="Edit Package Info" 
+                                                                NavigateUrl="~/Admin/frmModifyPackageTypeMaster.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Add Units Info" Value="Add Units Info" 
+                                                                NavigateUrl="~/Admin/frmAddUnitMaster.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Edit Units Info" Value="Edit Units Info" 
+                                                                NavigateUrl="~/Admin/frmModifyUnitMaster.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Add Storage Instrctions Info" 
+                                                                Value="Add Storage Instrctions Info" 
+                                                                NavigateUrl="~/Admin/frmAddStorageInstMaster.aspx"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Edit Storage Instrctions" Value="Edit Storage Instrctions" 
+                                                                NavigateUrl="~/Admin/frmModifyStorageInstMaster.aspx">
+                                                            </asp:MenuItem>
+                                                        </asp:MenuItem>
+                                                        <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Reports" Value="Reports">
+                                                            <asp:MenuItem Text="Employee" Value="New Item"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Warehouse" Value="Warehouse"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Products " Value="New Item"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Payments" Value="Payments"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Storage Data" Value="Storage Data"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Discharge Data" Value="Discharge Data"></asp:MenuItem>
+                                                        </asp:MenuItem>
+                                                        <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                                                        <asp:MenuItem Text="||" Value="||"></asp:MenuItem>
+                                                    </Items>
+                                                </asp:Menu>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table style="border-color: #000000; background-color: #DEDFDE" border="0" height="100%"
+                                    width="100%" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top" align="center">
+                                                <img src="../ImgMain/bottomgrayn(1).jpg" border="0" valign="None">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" style="border-style: none solid none solid; border-color: #7B797B;font-size: small; border-right-width: thin; border-left-width: thin;">
+                                                <div style="color:#422010;height:300%;overflow:auto">
+                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="center">
+                                                <img src="../ImgMain/bottomgrayn(1).jpg" border="0" valign="None">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,336 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs"
+    Inherits="MainMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .text
+        {
+            padding-right: 10px;
+            padding-left: 20px;
+        }
+        .smallbody
+        {
+            font-size: 12px;
+            color: #000000;
+            font-family: Calibri,Arial,sans-serif;
+        }
+        .smallbody2
+        {
+            font-size: 12px;
+            color: #f5f5f5;
+            font-family: Tahoma,sans-serif;
+        }
+        .smallbody3
+        {
+            font-size: 12px;
+            color: #ffffff;
+            font-family: Calibri,Tahoma,sans-serif;
+        }
+        .body
+        {
+            font-size: 13px;
+            color: #333333;
+            font-family: Tahoma,sans-serif;
+        }
+        .largtext
+        {
+            font-size: 17px;
+            font-family: Tahoma,sans-serif;
+        }
+        FONT
+        {
+            font-size: 13px;
+            font-family: Tahoma,sans-serif;
+        }
+        LI
+        {
+            list-style-image: url(images/pic.jpg);
+        }
+        A
+        {
+            text-decoration: underline;
+        }
+        .bg
+        {
+            background-position: 50% top;
+            background-repeat: no-repeat;
+        }
+        .bg2
+        {
+            padding-right: 10px;
+            background-position: 50% top;
+            padding-left: 20px;
+            background-repeat: no-repeat;
+        }
+        .boxbackorg
+        {
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            width: 230px;
+            padding-top: 5px;
+            background-color: #ff9933;
+        }
+        .boxbackylw
+        {
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            width: 230px;
+            padding-top: 5px;
+            background-color: #ffcc33;
+        }
+        .boxbackgrn
+        {
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            width: 230px;
+            padding-top: 5px;
+            background-color: #336633;
+        }
+        .boxbackblu
+        {
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            width: 230px;
+            padding-top: 5px;
+            background-color: #6699cc;
+        }
+        .boxbackprpl
+        {
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            width: 230px;
+            padding-top: 5px;
+            background-color: #333366;
+        }
+        .style2
+        {
+            color: #FF5510;
+            font-weight: bold;
+        }
+        .style3
+        {
+            color: #000000;
+            font-weight: bold;
+        }
+    </style>
+
+    <script src="ImgMain/allpages.js" language="javascript" type="text/javascript">
+    </script>
+
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <form id="frm1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <table bordercolor="#dcdcdc" height="90%" cellspacing="0" cellpadding="0" width="780"
+                        align="center" border="0">
+                        <tbody>
+                            <tr>
+                                <td valign="top" width="100%" height="100%">
+                                    <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#f5f5f5" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td valign="top" align="left">
+                                                    <font face="Arial" color="#000000" size="2">
+
+                                                        <script src="ImgMain/urchin.js" type="text/javascript"></script>
+
+                                                        <script type="text/javascript">_uacct = "UA-2901007-1";urchinTracker();</script>
+
+                                                    </font>
+                                                </td>
+                                                <td valign="top" align="right">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" align="left" colspan="2">
+                                                    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br />
+                                                    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <table style="line-height: 0px" cellspacing="0" cellpadding="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <img alt="" src="ImgMain/test_m1_b.png" />
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a id="m1tlm0a" href="Default.aspx">
+                                                                                        <img id="m1tlm0" style="border-top-style: none; border-right-style: none; border-left-style: none;
+                                                                                            border-bottom-style: none" alt="" src="ImgMain/test_m1_i0.jpg" /></a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img alt="" src="ImgMain/test_m1_s.png" />
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a id="m1tlm1a" href="frmAboutUs.aspx">
+                                                                                        <img id="m1tlm1" style="border-top-style: none; border-right-style: none; border-left-style: none;
+                                                                                            border-bottom-style: none" alt="" src="ImgMain/test_m1_i1.jpg" /></a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img alt="" src="ImgMain/test_m1_s.png" />
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a id="m1tlm2a" href="frmContactUs.aspx">
+                                                                                        <img id="m1tlm2" style="border-top-style: none; border-right-style: none; border-left-style: none;
+                                                                                            border-bottom-style: none" alt="" src="ImgMain/test_m1_i2.jpg" /></a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img alt="" src="ImgMain/test_m1_s.png" />
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a id="m1tlm3a" href="Admin/Default.aspx">
+                                                                                        <img id="m1tlm3" style="border-top-style: none; border-right-style: none; border-left-style: none;
+                                                                                            border-bottom-style: none" alt="" src="ImgMain/test_m1_i3.jpg" /></a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img alt="" src="ImgMain/test_m1_s.png" />
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a id="m1tlm4a" href="frmWareHouseData.aspx">
+                                                                                        <img id="m1tlm4" style="border-top-style: none; border-right-style: none; border-left-style: none;
+                                                                                            border-bottom-style: none" alt="" src="ImgMain/test_m1_i4.jpg" /></a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img alt="" src="ImgMain/test_m1_e.png" />
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <img src="ImgMain/topgrayn(2).jpg" border="0" valign="None" /><br />
+                                                    <img src="ImgMain/withoutwirewarehouse2(1).jpg" border="0" valign="None" /><br />
+                                                    <img src="ImgMain/middletops(1).jpg" border="0" valign="None" />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table height="100%" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding-left: 19px" valign="top" width="257">
+                                                    <img src="ImgMain/topkey.jpg" border="0" valign="None">
+                                                    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <table style="background-color: #ff9933" cellspacing="0" cellpadding="5" width="230"
+                                                                        bgcolor="#ff9933" border="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="justify">
+                                                                                    <a href="Emp/Default.aspx" id="emplnk" ><span class="style3">Employee Login</span></a><br />
+                                                                                   <a href="Security/Default.aspx" id="Securitylnk"><span class="style3">Security Login</span><span 
+                                                                                        class="style2"> </span> </a><br />
+                                                                                   <%-- <font class="smallbody" style="font-color: #FFFFFF"><b>Customer Quote</b> This program
+                                                                                        [Warehouse Management System] has driven cost’s out of our system improved our inventory
+                                                                                        turns, fill rates, and most important customer satisfaction. Hat's off to XXXXX.
+                                                                                    </font>--%>
+                                                                                    <br />
+                                                                                    <br />
+                                                                                    <center>
+                                                                                        <img src="ImgMain/SQL_FrontRunnerStamp(1).jpg"></center>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="middle">
+                                                                                    <br />
+                                                                                    <a href="#">
+                                                                                        <img src="ImgMain/requestinfobtn.jpg" border="0"></img></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <img src="ImgMain/bottomkey.jpg" border="0" valign="None"><br>
+                                                </td>
+                                                <td width="1" bgcolor="#ffffff">
+                                                    <img height="1" src="ImgMain/pixel.gif" width="1">
+                                                </td>
+                                                <td style="padding-left: 5px" valign="top">
+                                                    <img src="ImgMain\pixel(1).gif" border="0" valign="None"><br>
+                                                    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td valign="top" align="left">
+                                                                    <br />
+                                                                    <div style="width: 600px; height: 430px; overflow: auto; border: 1px; border-color: #FF9A31;
+                                                                        border-width: thick">
+                                                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                                        </asp:ContentPlaceHolder>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <font face="Arial" color="#000000" size="2"></font>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br />
+                                </td>
+                                <td valign="top" align="left" width="0" height="100%">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table height="100%" cellspacing="0" cellpadding="0" width="100%" border="0">
+                        <tbody>
+                            <tr>
+                                <td valign="top" width="257">
+                                    <img src="ImgMain/bottomgrayn(1).jpg" border="0" valign="None">
+                                </td>
+                                <td valign="top">
+                                    <table height="100%" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding-left: 0px">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+    </form>
+</body>
+</html>
